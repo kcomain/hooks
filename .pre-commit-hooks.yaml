@@ -3,3 +3,9 @@
   description: This hook runs a makefile target "generate-requirements"
   entry: genreq.sh
   language: script
+
+- id: formatting
+  name: Format code
+  description: This hook runs isort and black.
+  entry: formatting.sh
+  language: script
