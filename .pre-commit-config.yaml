@@ -1,0 +1,5 @@
+- id: genreq
+  name: Generate requirements
+  description: This hook runs a makefile target "generate-requirements"
+  entry: genreq.sh
+  language: script
