@@ -1,3 +1,8 @@
 #!/bin/bash
-isort $1
-black $1
+
+fallback() {
+  isort $1
+  black $1 --line-length=120
+}
+
+make lint || fallback
